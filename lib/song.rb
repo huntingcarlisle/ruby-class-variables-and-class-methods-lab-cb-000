@@ -27,7 +27,7 @@ class Song
   end
   
   def self.genre_count
-    @@genres.uniq.map {|genre| {genre => @@genres.count(genre)}}
+    @@genres.uniq.each_with_object({}){|genre, count| {genre => @@genres.count(genre)}}
   end
   
   def self.artist_count
