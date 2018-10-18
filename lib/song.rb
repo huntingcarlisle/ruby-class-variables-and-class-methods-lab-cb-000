@@ -27,7 +27,7 @@ class Song
   end
   
   def self.genre_count
-    
+    @@genres.uniq.map {|genre| {
   end
   
   def self.artist_count
