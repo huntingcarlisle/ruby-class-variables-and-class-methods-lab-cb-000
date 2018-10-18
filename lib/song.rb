@@ -22,5 +22,9 @@ class Song
     return @@artists
   end
   
+  def self.genres
+    return @@genres
+  end
+  
   
 end
